@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+pyenv/
+.venv/
+.venv
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# macOS & OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# IDE & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+
+# ML models & checkpoints (prevent pushing huge binary weights to git)
+*.pt
+*.bin
+*.safetensors
+*.onnx
+checkpoints/
+runs/
