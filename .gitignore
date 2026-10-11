@@ -42,3 +42,8 @@ Icon
 *.onnx
 checkpoints/
 runs/
+
+# Rust
+target/
+**/*.rs.bk
+

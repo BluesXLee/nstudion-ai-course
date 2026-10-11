@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = ["rust_mastery","week-00/rust_course","week-01/rust_course"]
+
+[workspace.dependencies]
+candle-core = { version = "0.11.0" }
+candle-nn = { version = "0.11.0" }
+anyhow = { version = "1.0" }
