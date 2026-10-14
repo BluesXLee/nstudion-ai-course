@@ -5,3 +5,7 @@ version = 4
 [[package]]
 name = "rust_mastery"
 version = "0.1.0"
+
+[[package]]
+name = "w00_rust_basics"
+version = "0.1.0"

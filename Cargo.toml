@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/*"]  # 新增 weeks/wNN-主題/rust 時把路徑加進來
+members = ["crates/*", "weeks/w00-rust-basics/rust"]  # 新增 weeks/wNN-主題/rust 時把路徑加進來
 
 [workspace.dependencies]
 candle-core = { version = "0.11.0" }
