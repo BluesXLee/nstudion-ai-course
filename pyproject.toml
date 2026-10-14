@@ -1,0 +1,13 @@
+[project]
+name = "tsdecide"
+version = "0.1.0"
+description = "Shared code for the 20-week Transformer curriculum: splits, numeric tokenization, labels, encoder"
+requires-python = ">=3.12"
+dependencies = ["numpy"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["py"]

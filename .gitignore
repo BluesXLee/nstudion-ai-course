@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+*.egg-info/
 *.py[cod]
 *$py.class
 *.so
@@ -42,6 +43,10 @@ Icon
 *.onnx
 checkpoints/
 runs/
+
+# Generated datasets & trained models (W9 frozen splits, W15 weights)
+/data/
+/models/
 
 # Rust
 target/

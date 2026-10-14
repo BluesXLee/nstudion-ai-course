@@ -7,20 +7,19 @@
 | 路徑 | 內容 |
 | --- | --- |
 | [`curriculum/`](curriculum/) | 20 週課綱 |
-| [`week-00/`](week-00/) … | 每週的 README、notebook 與 Rust 練習 |
-| [`docs/`](docs/) | Rust 參考指南（給 Python／Go 開發者） |
-| [`rust_mastery/`](rust_mastery/) | Rust 語法章節練習（ch06–ch11） |
-| [`lab/`](lab/) | 課綱以外的實驗 |
+| [`weeks/`](weeks/) | 每週練習（`wNN-主題/`：README、notebook、選做的 `rust/`） |
+| [`py/tsdecide/`](py/tsdecide/) | 跨週共用的 Python 套件：W4 切分、W6 量化與尺度特徵、W9 標籤產生器、W10–W15 Encoder |
+| [`crates/`](crates/) | Rust crates：`rust_mastery`（語法章節練習），W16 起的 `decision-service` |
+| `data/`、`models/` | W9 凍結的資料集與 W15 訓練出的權重（不進 git） |
 
 ## 環境
 
 ```bash
-# Python
+# Python：啟用虛擬環境，並以可編輯模式安裝共用套件
 source pyenv/bin/activate
+pip install -e .
 
-# Rust（根目錄是 Cargo workspace，-p 後面接套件名稱）
+# Rust：根目錄是 Cargo workspace，自動包含 crates/*；各週的 rust/ 需手動加進 members
 source "$HOME/.cargo/env"
-cargo run -p rust_course    # W0：week-00/rust_course
-cargo run -p rust_matrix    # W1：week-01/rust_course
 cargo run -p rust_mastery
 ```
